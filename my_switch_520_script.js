@@ -7,9 +7,9 @@
 // @author      h0zr
 // @description 2024/7/17 07:00:07
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=gamer520.com
-// @homepageURL https://github.com/h0zr/switch520-script/blob/main/my_switch_520_script.js
-// @downloadURL https://github.com/h0zr/switch520-script/blob/main/my_switch_520_script.js
-// @updateURL https://github.com/h0zr/switch520-script/blob/main/my_switch_520_script.js
+// @homepageURL https://github.com/h0zr/switch520-script/tree/main
+// @downloadURL https://raw.githubusercontent.com/h0zr/switch520-script/main/my_switch_520_script.js
+// @updateURL https://raw.githubusercontent.com/h0zr/switch520-script/main/my_switch_520_script.js
 // ==/UserScript==
 
 (function() {
