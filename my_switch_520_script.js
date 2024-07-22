@@ -3,10 +3,13 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://*.gamer520.com/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      h0zr
 // @description 2024/7/17 07:00:07
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=gamer520.com
+// @homepageURL https://github.com/h0zr/switch520-script/blob/main/my_switch_520_script.js
+// @downloadURL https://github.com/h0zr/switch520-script/blob/main/my_switch_520_script.js
+// @updateURL https://github.com/h0zr/switch520-script/blob/main/my_switch_520_script.js
 // ==/UserScript==
 
 (function() {
