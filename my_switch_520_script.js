@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Switch520 跳过广告，自动填充密码
+// @name        Switch520 综合脚本
 // @namespace   Violentmonkey Scripts
 // @match       https://*.gamer520.com/*
 // @grant       none
@@ -8,6 +8,9 @@
 // @description 2024/7/17 07:00:07
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=gamer520.com
 // @homepageURL https://github.com/h0zr/switch520-script/tree/main
+// @license MIT
+// @downloadURL https://github.com/h0zr/switch520-script/blob/main/my_switch_520_script.js
+// @updateURL https://github.com/h0zr/switch520-script/blob/main/my_switch_520_script.js
 // ==/UserScript==
 
 (function() {
@@ -17,13 +20,18 @@
         const button = document.querySelector(selector);
         if (button) {
             button.click();
-            console.log(`Button clicked using CSS selector: ${selector}`);
-        } else {
-            console.log(`Button not found using CSS selector: ${selector}`);
         }
     }
 
     setTimeout(() => clickButtonByCSS('.swal2-close'), 1000);
+
+// --------------------------------------------------------------------------------------------------
+
+    document.addEventListener('click', function() {
+        setInterval(function() {
+            clickButtonByCSS('.swal2-confirm');
+        }, 500);
+    });
 
 // --------------------------------------------------------------------------------------------------
 
@@ -34,7 +42,6 @@
             const match = text.match(/密码保护：(\w+)/);
             return match ? match[1] : null;
         } else {
-            console.log(`Element not found for selector: ${selector}`);
             return null;
         }
     }
